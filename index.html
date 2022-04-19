@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10 Homework</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container pt-3">
+        <h2>Bootstrap styled form that allows to enter data to the table below</h2>
+        <form class="form-inline mt-2">
+            <label for="name">Student Name:</label>
+            <input type="text" class="form-control" placeholder="Enter the student name" id="sname">
+            <label for="grade">Student Grade:</label>
+            <input type="text" class="form-control" placeholder="Enter the student grade" id="sgrade">
+            <label for="course">Student Course:</label>
+            <input type="text" class="form-control" placeholder="Enter the course name" id="scourse">
+        </form>
+        <button type="submit" onclick="addToTable()" class="btn btn-primary mt-3">Add Table Row</button>
+        <table class="table table-dark table-hover mt-5" id="dataTable">
+            <thead>
+              <tr>
+                <th>Student Name</th>
+                <th>Student Grade</th>
+                <th>Course</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A Kadriu</td>
+                <td>80</td>
+                <td>CS 50</td>
+              </tr>
+              <tr>
+                <td>J Doe</td>
+                <td>98</td>
+                <td>CSC 212</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>
